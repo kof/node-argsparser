@@ -23,10 +23,8 @@ node script.js -paths /test.js /test1.js -> {node: "script.js", "-paths": ["/tes
 
 ## Usage
 
-    var parse = require( "argsparser" ).parser;
-    
     // per default it parses process.argv
-    var args = parse(); // {"node": "/path/to/your/script.js"}
+    var args = require( "argsparser" ).parse(); // {"node": "/path/to/your/script.js"}
     
     // optional you can pass your own arguments array
-    var args = parse(["-a", "test"]); // {"-a": "test"}
+    var args = require( "argsparser" ).parse(["-a", "test"]); // {"-a": "test"}
