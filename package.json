@@ -1,0 +1,20 @@
+{
+    "name": "argsparser",
+    "description": "A tiny command line arguments parser",
+    "version": "0.0.1",
+    "author": "Oleg Slobodskoi <oleg008@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:kof/node-argsparser.git"
+    },
+    "keywords": [ "arguments", "options", "command line", "parser" ],
+    "directories": { "lib": "./lib" },
+    "engines": { "node": ">= 0.2.0" },
+    "scripts": { "install": "node test/test.js"  },
+    "licenses": [
+        { 
+            "type": "MIT",
+            "url" : "http://www.opensource.org/licenses/mit-license.php"
+        }
+    ]
+}
