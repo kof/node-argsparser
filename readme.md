@@ -28,3 +28,7 @@ node script.js -paths /test.js /test1.js -> {node: "script.js", "-paths": ["/tes
     
     // optional you can pass your own arguments array
     var args = require( "argsparser" ).parse(["-a", "test"]); // {"-a": "test"}
+
+    
+## Installation
+    npm install argsparser    
