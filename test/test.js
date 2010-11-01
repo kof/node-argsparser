@@ -2,9 +2,9 @@
 
 var a = require( "assert" ),
     parse = require( "./../lib/argsparser" ).parse,
-    sys = require( "sys" );
+    util = require( "util" );
 
-sys.print( "Run tests...\n" );
+util.print( "Run tests...\n" );
 
 a.deepEqual( parse(), {node: __filename}, "node script.js" );
 
@@ -35,4 +35,4 @@ a.deepEqual( parse(["--paths", "/test.js", "/test1.js"]), {"--paths": ["/test.js
 a.deepEqual( parse(["--paths", "/test.js", "/test1.js", "-a", "testa"]), {"--paths": ["/test.js", "/test1.js"], "-a": "testa"}, "node script.js --paths /test.js /test1.js -a testa" );
 
 
-sys.print( "All tests ok\n" );
+util.print( "All tests ok\n" );
