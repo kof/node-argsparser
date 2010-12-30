@@ -1,6 +1,6 @@
 var a = require('assert'),
     util = require('util'),
-    parse = require('../argsparser').parse;
+    parse = require('../lib/argsparser').parse;
 
 util.print('Run tests...\n');
 

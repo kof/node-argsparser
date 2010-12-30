@@ -9,9 +9,9 @@
     },
     "keywords": [ "arguments", "options", "command line", "parser" ],
     "directories": { "lib": "./lib" },
-    "main": "./argsparser.js",
+    "main": "./lib/argsparser.js",
     "engines": { "node": ">= 0.2.0" },
-    "scripts": { "install": "node test/test.js"  },
+    "scripts": { "install": "node ./test/test.js"  },
     "licenses": [
         { 
             "type": "MIT",
