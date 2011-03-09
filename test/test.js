@@ -14,6 +14,8 @@ a.deepEqual(parse(['-o', 'false']), {'-o': false}, 'node script.js -o false');
 
 a.deepEqual(parse(['-o', '123']), {'-o': 123}, 'node script.js -o 123');
 
+a.deepEqual(parse(['--token', 'bla--bla']), {'--token': 'bla--bla'}, 'node script.js --token bla--bla');
+
 a.deepEqual(parse(['-o', '123.456']), {'-o': 123.456}, 'node script.js -o 123.456');
 
 a.deepEqual(parse(['-o', 'test']), {'-o': 'test'}, 'node script.js -o test');
@@ -31,6 +33,5 @@ a.deepEqual(parse(['-paths', '/test.js', '/test1.js']), {'-paths': ['/test.js', 
 a.deepEqual(parse(['--paths', '/test.js', '/test1.js']), {'--paths': ['/test.js', '/test1.js']}, 'node script.js --paths /test.js /test1.js');
 
 a.deepEqual(parse(['--paths', '/test.js', '/test1.js', '-a', 'testa']), {'--paths': ['/test.js', '/test1.js'], '-a': 'testa'}, 'node script.js --paths /test.js /test1.js -a testa');
-
 
 util.print('All tests ok\n');
