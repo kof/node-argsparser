@@ -34,4 +34,6 @@ a.deepEqual(parse(['--paths', '/test.js', '/test1.js']), {'--paths': ['/test.js'
 
 a.deepEqual(parse(['--paths', '/test.js', '/test1.js', '-a', 'testa']), {'--paths': ['/test.js', '/test1.js'], '-a': 'testa'}, 'node script.js --paths /test.js /test1.js -a testa');
 
+a.deepEqual(parse(['--port', '80', '8080']), {'--port': [80, 8080]}, 'node server.js --port 80 8080');
+
 util.print('All tests ok\n');
