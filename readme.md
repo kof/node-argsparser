@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/kof/node-argsparser.png)](http://travis-ci.org/kof/node-argsparser)
 ## Yet another tiny arguments parser for node
 
 ## Features
